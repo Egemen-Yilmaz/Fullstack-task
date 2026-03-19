@@ -21,6 +21,10 @@ Proje iki ana dizinden oluşmaktadır:
 ## Kurulum ve Çalıştırma
 
 1. Projeyi yerel makinenize indirin.
+    **Depoyu Klonlayın:**
+   ```bash
+   git clone [https://github.com/Egemen-Yilmaz/Fullstack-task.git](https://github.com/Egemen-Yilmaz/Fullstack-task.git)
+   cd Fullstack-task
 2. Backend kurulumu:
    cd backend
    npm install
