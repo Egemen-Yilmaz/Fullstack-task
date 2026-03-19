@@ -1,0 +1,38 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark; /* Varsayılan olarak karanlık mod */
+  background-color: #0f172a;
+  color: #f1f5f9;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Linkler veya temel metinler için basit ayarlar */
+a {
+  font-weight: 500;
+  color: #38bdf8;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #7dd3fc;
+}

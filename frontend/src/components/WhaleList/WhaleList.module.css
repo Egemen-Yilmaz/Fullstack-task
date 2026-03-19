@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.emptyState {
+  padding: 40px;
+  color: #64748b;
+  font-style: italic;
+}
