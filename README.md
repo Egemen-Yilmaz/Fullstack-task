@@ -1,5 +1,8 @@
 # Ethereum USDT Whale Tracker
 
+### Proje Ekran Görüntüsü
+![USDT Whale Tracker Demo](./screenshot.png)
+
 Bu proje, Ethereum ana ağı üzerindeki USDT transferlerini gerçek zamanlı olarak izleyen ve 100.000 USDT üzerindeki işlemleri kullanıcılara anlık bildirim olarak sunan bir uygulamadır.
 
 ## Proje Yapısı

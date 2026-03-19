@@ -1,73 +1,48 @@
-# React + TypeScript + Vite
+# Whale Tracker Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kullanıcıların anlık blockchain hareketlerini izleyebileceği, modern ve duyarlı bir kullanıcı arayüzüdür.
 
-Currently, two official plugins are available:
+## Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Gerçek Zamanlı Güncellemeler: Sayfa yenilenmeden yeni transferler listeye eklenir.
+- Push Bildirimleri: Uygulama arka planda veya farklı bir sekmede olsa dahi tarayıcı bildirimi gönderilir.
+- Modüler Tasarım: Bileşen tabanlı mimari ve CSS Modules kullanılarak geliştirilmiştir.
 
-## React Compiler
+## Kurulum Detayları
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Projeyi çalıştırmadan önce src/firebase.ts ve public/firebase-messaging-sw.js dosyalarındaki Firebase yapılandırmasının güncel olduğundan emin olunmalıdır.
 
-## Expanding the ESLint configuration
+## Çalıştırma
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+cd frontend
+npm install
+npm run dev
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Uygulama varsayılan olarak http://localhost:5173 portunda çalışmaktadır.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## EN
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Whale Tracker Frontend
+
+A modern and responsive user interface where users can monitor instantaneous blockchain movements.
+
+## Features
+
+- Real-time Updates: New transfers are added to the list without refreshing the page.
+- Push Notifications: Browser notifications are sent even if the application is in the background or a different tab.
+- Modular Design: Developed using component-based architecture and CSS Modules.
+
+## Setup Details
+
+Before running the project, ensure that the Firebase configuration in src/firebase.ts and public/firebase-messaging-sw.js is up to date.
+
+## Execution
+
+cd frontend
+npm install
+npm run dev
+
+The application runs on http://localhost:5173 by default.
